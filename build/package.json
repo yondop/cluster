@@ -1,0 +1,9 @@
+{
+  "name": "helloworld",
+  "main": "index.html",
+  "window": {
+    "title": "Clusters",
+    "width": 1000,
+    "height": 800
+  }
+}
