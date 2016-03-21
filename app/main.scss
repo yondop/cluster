@@ -1,0 +1,31 @@
+$bg-color: #FFFFFF;
+$primary-bg-color: #333333;
+
+body {
+  background-color: $bg-color;
+}
+
+.container {
+  margin: 15px auto;
+
+  #info {
+    width: 830px;
+    margin: 10px auto;
+
+    div {
+      margin: 10px;
+    }
+
+    .data {
+      border: 1px solid black;
+      padding: 10px;
+    }
+  }
+
+  #kmeans {
+    background-color: $primary-bg-color;
+    height: 530px;
+    width: 830px;
+    margin: 10px auto;
+  }
+}
