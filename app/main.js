@@ -11,14 +11,19 @@ d3.select('#reset')
   .on('click', function() { init(); draw(); });
 
 
-const WIDTH = 800;
-const HEIGHT = 500;
+const WIDTH = screen.width * .6 - 50;
+const HEIGHT = screen.height * .6 - 50;
+
+d3.select('#kmeans')
+  .style('width', (WIDTH + 50) + 'px')
+  .style('height', (HEIGHT + 50) + 'px');
 
 let svg = d3.select('#kmeans svg')
   .attr('width', WIDTH + 30)
   .attr('height', HEIGHT + 30)
   .style('padding', '10px')
   .style('cursor', 'pointer')
+  .style('margin', '10px auto')
   .style('-webkit-user-select', 'none')
   .style('-khtml-user-select', 'none')
   .style('-moz-user-select', 'none')
