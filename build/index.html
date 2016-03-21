@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div  id="kmeans">
+          <svg></svg>
+        </div>
+        <div id="info">
+          <button type="button" id="step">Step</button>
+          <button type="button" id="restart">Restart</button>
+
+
+          <div class="data">
+            <div class="type">
+              <input type="radio" name="type" value="maximin" id="type-maxmin">
+              <label for="type-maxmin">maximin</label>
+
+              <input type="radio" name="type" value="k-means" id="type-kmeans" checked>
+              <label for="type-kmeans">k-means</label>
+            </div>
+
+            <p>
+              <label for="N">N (количество точек) </label>
+              <input type="number" name="type" min="2" max="1000" value="100" id="N">
+            </p>
+            <p>
+              <label for="K">K (количество кластеров) </label>
+              <input type="number" name="type" min="2" max="50" value="5" id="K">
+            </p>
+
+            <button type="button" id="reset">New Set</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
