@@ -11,12 +11,15 @@ d3.select('#reset')
   .on('click', function() { init(); draw(); });
 
 
-const WIDTH = screen.width * .6 - 50;
+const WIDTH = screen.width * .5 - 50;
 const HEIGHT = screen.height * .6 - 50;
 
 d3.select('#kmeans')
   .style('width', (WIDTH + 50) + 'px')
   .style('height', (HEIGHT + 50) + 'px');
+
+d3.select('#info')
+  .style('width', (WIDTH + 50) + 'px');
 
 let svg = d3.select('#kmeans svg')
   .attr('width', WIDTH + 30)
